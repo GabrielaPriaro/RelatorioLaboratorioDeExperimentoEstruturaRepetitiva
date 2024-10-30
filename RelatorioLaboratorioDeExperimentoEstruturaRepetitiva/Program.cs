@@ -47,7 +47,7 @@ namespace RelatorioLaboratorioDeExperimentoEstruturaRepetitiva
                 Console.Write("Tipo de cobaia (S - sapo, R - rato, C - coelho): ");
                 tipoCobaia = Console.ReadLine();
 
-                switch (tipoCobaia)
+                switch (tipoCobaia.ToUpper())
                 {
                     case "S":
                         totalSapos = totalSapos + quantCobaias;
@@ -58,7 +58,12 @@ namespace RelatorioLaboratorioDeExperimentoEstruturaRepetitiva
                     case "C":
                         totalCoelhos = totalCoelhos + quantCobaias;
                         break;
+                    default:
+                        Console.WriteLine("Tipo de cobaia nao existe");
+                        i--;
+                        break;
                 }
+
                 totalCobaias = totalCobaias + quantCobaias;
             }
 
