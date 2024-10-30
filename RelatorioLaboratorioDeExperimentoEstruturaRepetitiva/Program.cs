@@ -12,10 +12,6 @@
 //cobaia utilizada e o percentual de cada uma em relação ao total de cobaias utilizadas, sendo que o
 //percentual deve ser apresentado com dois dígitos após o ponto. 
 
-
-//resolver problema do usuario digitar maiusculo ou minusculo
-//resolver problema do usuario digitar uma letra diferente da esperada R - S - C 
-
 using System;
 using System.Globalization;
 
